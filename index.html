@@ -1,22 +1,166 @@
+<!-- Template by BEDIMCODE -->
+<!-- Adapted by Paola Gomez -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Hello World!</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio</title>
 
-<body background="monterrey.jpg" style="background-size: cover;">
-<br />
-	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <h1 align="center">
-        <font face="Arial" color="white" size="12">
-            Hello World! 
-        </font>
-    </h1>
-    <h3 align="center">
-        <font face="Arial" color="black" size="5" style="background-color: white;" >
-            I'm Paola Gómez    
-        </font>
-    </h3>
-</body>
-</html>
+        <!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+        <!-- BOX ICONS -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav_logo">Paola</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <!-- <li class="nav__item"><a href="#" class="nav__link">Blog</a></li> -->
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+
+            </nav>
+        </header>
+        <main class="l-main">
+
+            <!-- Home -->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hello, <br> I am <span class="home__title-color">Paola</span><br> Engineer Student</h1>
+                    <a href="#contact" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/paolagomezreyna/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="#" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.instagram.com/codewithpolly/" target="_blank" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <img src="assets/img/home-profile.png" alt="">
+                </div>
+            </section>
+
+            <!-- About -->
+            <section class="about section" id="about">
+                <h2 class="section-title">About</h2>
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about-profile.png" alt="About">
+                    </div>
+
+                    <div> 
+                        <h2 class="about__subtitle">
+                            <span>Let me</span>
+                            <span>introduce</span>
+                            <span>myself</span>
+                        </h2>
+                        <p class="about__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum iure obcaecati vel possimus officia maiores perferendis ut! Quos, perspiciatis.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            
+
+            <!-- Projects -->
+            <section class="projects section bd-container" id="projects">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="portafolio__nav">
+                    <span class="portafolio__item active-portafolio" data-filter="all">All</span>
+                    <span class="portafolio__item active-portafolio" data-filter=".electronics">Electronics</span>
+                    <span class="portafolio__item active-portafolio" data-filter=".app">Apps</span>
+                    <span class="portafolio__item active-portafolio" data-filter=".upcoming">Upcoming</span>
+                </div>
+
+                <div class="portafolio__container bd-grid">
+                    <div class="portafolio__content mix electronics">
+                        <a href="#"><img src="assets/img/portafolio/frank-wang-ogxlyCA1BQc-unsplash.jpg" alt="" class="portafolio__img"></a>
+                        <div class="portafolio__data">
+                            <span class="portafolio__subtitle">Electronics</span>
+                            <a href="#"><h2 class="portafolio__title">New project for a client</h2></a>
+                            <a href="#" class="button-view button-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="portafolio__content mix app">
+                        <a href="#"><img src="assets/img/portafolio/saulo-mohana-D_kOW7iHNnw-unsplash.jpg" alt="" class="portafolio__img"></a>
+                        <div class="portafolio__data">
+                            <span class="portafolio__subtitle">App</span>
+                            <a href="#"><h2 class="portafolio__title">New project for a client</h2></a>
+                            <a href="#" class="button-view button-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="portafolio__content mix upcoming">
+                        <a href="#"><img src="assets/img/portafolio/zan-X_JsI_9Hl7o-unsplash.jpg" alt="" class="portafolio__img"></a>
+                        <div class="portafolio__data">
+                            <span class="portafolio__subtitle">Website</span>
+                            <a href="#"><h2 class="portafolio__title">New project for a client</h2></a>
+                            <a href="#" class="button-view button-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog -->
+            <!-- Contact -->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact__container bd-grid">
+                    <form action="https://formsubmit.co/pgr0109@email.com" class="contact__form" method="POST">
+                        <input type="text" placeholder="Name" class="contact__input" required>
+                        <input type="mail" placeholder="Email" class="contact__input" required>
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input" required></textarea>
+                        <input type="button" value="Send" class="contact__button button">
+                        <input type="hidden" name="_template" value="table">
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p class="footer__title">Paola</p>
+            <!-- <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+            </div> -->
+            <p>&#169; 2021 Copyright. All rights reserved.</p>
+        </footer>
+
+        <!-- MIXITUP FILTER -->
+        <script src="assets/js/mixitup.min.js"></script>
+
+        <!-- SCROLL REVEAL -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!-- MAIN JS -->
+        <script src="assets/js/main.js"></script>
+
+    </body>
+    </html>
