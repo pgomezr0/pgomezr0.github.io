@@ -47,6 +47,7 @@ sr.reveal('.about__text', {delay: 400})
 
 //Scroll Contact
 sr.reveal('.contact__input', {interval: 200})
+sr.reveal('.contact__button', {interval: 200})
 
 /*===== MIXITUP Filter =====*/
 const mixer = mixitup('.portafolio__container', {

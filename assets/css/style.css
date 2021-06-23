@@ -308,13 +308,17 @@ img {
 .portafolio__title {
   font-size: var(--h3-font-size);
   color: var(--second-color);
-  margin: var(--mb-2) 0;
 }
 
 .portafolio__container {
   row-gap: 2rem;
 }
 
+.portafolio__data p {
+  font-size: var(--small-font-size);
+  color: var(--second-color);
+  margin: var(--mb-2) 0;
+}
 /* Button - View Details */
 .button-view {
   display: inline-block;
@@ -341,13 +345,19 @@ img {
 .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
+  font-family: var(--body-font);
   padding: 1rem;
   border-radius: 0.5rem;
   border: 1.5px solid var(--second-color);
   outline: none;
-  margin-bottom: var(--mb-4);
+  margin-bottom: var(--mb-3);
+  resize: none;
 }
+
+.contact__input:focus {
+  border: 2px solid var(--second-color-dark);
+}
+
 .contact__button {
   display: block;
   border: none;

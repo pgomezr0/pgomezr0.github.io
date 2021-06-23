@@ -7,7 +7,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portafolio</title>
+        <title>Portfolio</title>
+        <link rel="shortcut icon" type="image/ico" href="assets/img/favicon.ico">
 
         <!-- CUSTOM CSS -->
         <link rel="stylesheet" href="./assets/css/style.css">
@@ -52,7 +53,7 @@
 
                 <div class="home__social">
                     <a href="https://www.linkedin.com/in/paolagomezreyna/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="#" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://github.com/pgomezr0" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
                     <a href="https://www.instagram.com/codewithpolly/" target="_blank" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
                 </div>
 
@@ -76,7 +77,7 @@
                             <span>myself</span>
                         </h2>
                         <p class="about__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum iure obcaecati vel possimus officia maiores perferendis ut! Quos, perspiciatis.
+                            I am full time mechatronics engineering student based in Monterrey, Mexico. This fall, I will move to the UK for a year to, parallely, start my masters degree on Advanced Computer Science. Since, I am still figuring out which computer-related field I like to work in the most, this portfolio aims to share some of my upcoming and miscellaneous projects. 
                         </p>
                     </div>
                 </div>
@@ -91,35 +92,39 @@
                 <div class="portafolio__nav">
                     <span class="portafolio__item active-portafolio" data-filter="all">All</span>
                     <span class="portafolio__item active-portafolio" data-filter=".electronics">Electronics</span>
-                    <span class="portafolio__item active-portafolio" data-filter=".app">Apps</span>
+                    <span class="portafolio__item active-portafolio" data-filter=".automate">Automation</span>
+                    <span class="portafolio__item active-portafolio" data-filter=".dataAnalysis">Data Analysis</span>
                     <span class="portafolio__item active-portafolio" data-filter=".upcoming">Upcoming</span>
                 </div>
-
+                <!-- add href to each a-anchor once view details is available to use-->
                 <div class="portafolio__container bd-grid">
-                    <div class="portafolio__content mix electronics">
-                        <a href="#"><img src="assets/img/portafolio/frank-wang-ogxlyCA1BQc-unsplash.jpg" alt="" class="portafolio__img"></a>
+                    <div class="portafolio__content mix upcoming electronics">
+                        <a href="https://www.instructables.com/Ever-Blooming-Mechanical-Tulip/" target="_blank"><img src="assets/img/portafolio/mechanical-tulip.jpg" alt="" class="portafolio__img"></a>
                         <div class="portafolio__data">
-                            <span class="portafolio__subtitle">Electronics</span>
-                            <a href="#"><h2 class="portafolio__title">New project for a client</h2></a>
-                            <a href="#" class="button-view button-link">View Details</a>
+                            <span class="portafolio__subtitle">Upcoming</span>
+                            <a><h2 class="portafolio__title">Mechanical Tulip</h2></a>
+                            <p>Nightstand touchpad lamp. Shaped like a tulip, it opens its petals using a pushroad controlled by a small servomotor.</p>
+                            <a class="button-view button-link">View Details</a>
                         </div>
                     </div>
 
-                    <div class="portafolio__content mix app">
-                        <a href="#"><img src="assets/img/portafolio/saulo-mohana-D_kOW7iHNnw-unsplash.jpg" alt="" class="portafolio__img"></a>
+                    <div class="portafolio__content mix upcoming automate">
+                        <a href="https://unsplash.com/photos/4FHF4kCnj8A?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank"><img src="assets/img/portafolio/twitter-bot.jpg" alt="" class="portafolio__img"></a>
                         <div class="portafolio__data">
-                            <span class="portafolio__subtitle">App</span>
-                            <a href="#"><h2 class="portafolio__title">New project for a client</h2></a>
-                            <a href="#" class="button-view button-link">View Details</a>
+                            <span class="portafolio__subtitle">Upcoming </span>
+                            <a><h2 class="portafolio__title">Twitter Bot</h2></a>
+                            <p>Bot tweets lyrics from my personal favorite songs.</p>
+                            <a class="button-view button-link">View Details</a>
                         </div>
                     </div>
 
-                    <div class="portafolio__content mix upcoming">
-                        <a href="#"><img src="assets/img/portafolio/zan-X_JsI_9Hl7o-unsplash.jpg" alt="" class="portafolio__img"></a>
+                    <div class="portafolio__content mix upcoming dataAnalysis">
+                        <a href="https://unsplash.com/photos/yubCnXAA3H8?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank"><img src="assets/img/portafolio/netflix.jpg" alt="" class="portafolio__img"></a>
                         <div class="portafolio__data">
-                            <span class="portafolio__subtitle">Website</span>
-                            <a href="#"><h2 class="portafolio__title">New project for a client</h2></a>
-                            <a href="#" class="button-view button-link">View Details</a>
+                            <span class="portafolio__subtitle">Upcoming</span>
+                            <a><h2 class="portafolio__title">Netflix Wrapped</h2></a>
+                            <p>Cumulative stats of my favorite movies and shows on Netflix.</p>
+                            <a class="button-view button-link">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -130,12 +135,14 @@
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
                 <div class="contact__container bd-grid">
-                    <form action="https://formsubmit.co/pgr0109@email.com" class="contact__form" method="POST">
-                        <input type="text" placeholder="Name" class="contact__input" required>
-                        <input type="mail" placeholder="Email" class="contact__input" required>
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input" required></textarea>
-                        <input type="button" value="Send" class="contact__button button">
-                        <input type="hidden" name="_template" value="table">
+                    <form method="POST" class="contact__form">
+                        <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                        <textarea placeholder="Write your message" name="message" cols="0" rows="10" class="contact__input" required></textarea>
+                        <div class="button-area">
+                            <span></span>
+                            <button type="submit" class="contact__button button">Send</button>
+                        </div> 
                     </form>
                 </div>
             </section>
@@ -161,6 +168,12 @@
 
         <!-- MAIN JS -->
         <script src="assets/js/main.js"></script>
+
+        <!-- CONTACT FORM JS -->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script>
+        <script src="assets/js/script.js"></script>
+
 
     </body>
     </html>
