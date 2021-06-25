@@ -25,13 +25,13 @@ function submitForm(e) {
     let name = document.querySelector("[name='name']").value;
     let email = document.querySelector("[name='email']").value;
     let message = document.querySelector("[name='message']").value;
-    console.log(name, email, message);
-
+   
     saveContactInfo(name, email, message);
 
     document.querySelector(".contact__form").reset();
-
+    
     sendEmail(name, email, message);
+
 }
 
 //Saves contanct info in Firebase DB
