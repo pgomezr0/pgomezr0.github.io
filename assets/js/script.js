@@ -4,10 +4,11 @@
 var firebaseConfig = {
     apiKey: "AIzaSyCFWPbld3L6dibmedQb3vks1co41Co6LsI",
     authDomain: "portfolio-contact-form-c3679.firebaseapp.com",
+    databaseURL: "https://portfolio-contact-form-c3679-default-rtdb.firebaseio.com",
     projectId: "portfolio-contact-form-c3679",
     storageBucket: "portfolio-contact-form-c3679.appspot.com",
     messagingSenderId: "556417085737",
-    appId: "1:556417085737:web:3aa558bfeae35a63d88738"
+    appId: "1:556417085737:web:ef15284b69ceb332d88738"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
@@ -49,9 +50,7 @@ function saveContactInfo(name, email, message) {
 //Sends contact info to Gmail
 function sendEmail(name, email, message){
     Email.send({
-        Host : "smtp.gmail.com",
-        Username : "pgr0109@gmail.com",
-        Password : "jarhdpszeldydxzy",
+        SecureToken : "4418179f-ae30-4984-8a01-28745dec0545",
         To : "pgr0109@gmail.com",
         From : "pgr0109@gmail.com",
         Subject : `[👩🏻‍💻 CodeWithPolly] ${name} sent you a message`,
